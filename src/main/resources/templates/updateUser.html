@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>修改用户信息</title>
+</head>
+<body>
+    <form action="updateUser" method="post">
+        <table border="1">
+            <tr>
+                <td>编号</td>
+                <td><input name="id" th:value="${user.id}" readonly/></td>
+            </tr>
+            <tr>
+                <td>邮箱</td>
+                <td><input name="email" th:value="${user.email}"/></td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input name="password" type="password" th:value="${user.password}"/></td>
+            </tr>
+            <tr>
+                <td>生日</td>
+                <td><input name="birthday" type="date" th:value="${user.birthday}"/></td>
+            </tr>
+<!--            <tr>-->
+<!--                <td>性别</td>-->
+<!--                <td th:switch="${user.sex}">-->
+<!--                    <div th:case="${user.sex}">-->
+<!--                        男<input name="sex" type="radio" value="F" checked/>-->
+<!--                        女<input name="sex" type="radio" value="M"/>-->
+<!--                    </div>-->
+<!--                    <div th:case="${user.sex}">-->
+<!--                        男<input name="sex" type="radio" value="F"/>-->
+<!--                        女<input name="sex" type="radio" value="M" checked/>-->
+<!--                    </div>-->
+<!--                </td>-->
+<!--            </tr>-->
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="修改"/>
+                    <a href="/"><input type="button" value="返回"/></a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加新用户</title>
+</head>
+<body>
+    <form action="addUser" method="post">
+        <table border="1">
+            <tr>
+                <td>邮箱</td>
+                <td><input name="email"/></td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input name="password" type="password"/></td>
+            </tr>
+            <tr>
+                <td>生日</td>
+                <td><input name="birthday" type="date"/></td>
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td>
+                    男<input name="sex" type="radio" value="F" checked/>
+                    女<input name="sex" type="radio" value="M"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="提交"/>
+                    <input type="reset" value="重置"/>
+                    <a href="/"><input type="button" value="返回"/></a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
