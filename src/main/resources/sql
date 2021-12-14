@@ -1,0 +1,11 @@
+drop table users;
+create table users(
+    id int primary key auto_increment,
+    email varchar(30),
+    password varchar(30),
+    birthday date,
+    sex varchar(30),
+    login_count int,
+    last_login_time datetime
+);
+delete from users where id = 1;

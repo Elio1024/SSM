@@ -17,7 +17,7 @@ public class UserController {
         model.addAttribute("users", userMapper.findAll());
         return "users";
     }
-
+    //测试一下
     @RequestMapping("add")
     public String add(){
         return "add";
